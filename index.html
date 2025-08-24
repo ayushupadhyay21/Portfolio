@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Upadhyay - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AYUSH</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Ayush Upadhyay</span></h1>
+                    <p class="hero-subtitle">Data Analyst & Fullstack Backend Developer</p>
+                    <p class="hero-description">Skilled in Python, FastAPI, SQL, and Power BI. Passionate about building REST APIs, authentication systems, and ETL pipelines for data-driven insights.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">View My Work</button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">Get In Touch</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="Ayush_Pic.jpg" alt="Ayush Upadhyay" class="profile-pic">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I am a passionate and dedicated developer with expertise in backend development, data analytics, and API development. My journey in software development has been driven by curiosity and a desire to create meaningful solutions through data-driven approaches.</p>
+                    <p>With expertise in Python, FastAPI, and data visualization tools, I specialize in building robust ETL pipelines, authentication systems, and data analytics dashboards. I believe in writing clean, maintainable code and staying updated with the latest industry trends.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Years Education</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">7.0</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">13+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-code"></i>
+                            <span>Code</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Design</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-rocket"></i>
+                            <span>Launch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="FastAPI">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span class="skill-name">FastAPI</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="GoLang">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">GoLang</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="REST APIs">
+                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Databases & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="PostgreSQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="VS Code">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="category-title">Data Analytics & Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Power BI">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <span class="skill-name">Power BI</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Excel">
+                            <div class="skill-icon"><i class="fas fa-table"></i></div>
+                            <span class="skill-name">Excel</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Pandas">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">Pandas</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="NumPy">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span class="skill-name">NumPy</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Matplotlib">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <span class="skill-name">Matplotlib</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Seaborn">
+                            <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+                            <span class="skill-name">Seaborn</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Career Essentials in Data Analysis</h3>
+                        <p class="certification-issuer">Microsoft & LinkedIn</p>
+                        <div class="certification-badge">
+                            <span class="badge-text">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Data Analytics Job Simulation</h3>
+                        <p class="certification-issuer">Deloitte (Forage)</p>
+                        <div class="certification-badge">
+                            <span class="badge-text">Job Simulation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/mysql-etl-dashboard" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MySQL-ETL-Service Dashboard</h3>
+                        <p class="project-description">Created a robust ETL pipeline using MySQL and Python to transform and load retail data. Visualized KPIs (orders, profit, customer segments) in Power BI for data-driven decisions. Optimized queries to improve processing efficiency by 20%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/authentication-api" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Authentication API</h3>
+                        <p class="project-description">Built a RESTful Authentication API using FastAPI with JWT-based user authentication and role-based access control. Integrated PostgreSQL for secure user data management and relational storage. Designed API endpoints for registration, login, password hashing, and session handling.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/machine-learning-models" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Heart Disease Prediction Model</h3>
+                        <p class="project-description">Collection of ML models including classification, regression, and clustering algorithms. Features data preprocessing, model training, evaluation, and deployment pipelines.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">ML</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/data-analytics-projects" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Analytics Projects</h3>
+                        <p class="project-description">Collection of data analysis projects using Python, Pandas, NumPy, and visualization libraries. Includes exploratory data analysis, statistical modeling, and business intelligence dashboards for various datasets.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/power-bi-dashboards" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Power BI Dashboards</h3>
+                        <p class="project-description">Interactive business intelligence dashboards created with Power BI. Features KPI visualizations, trend analysis, and data storytelling for retail, e-commerce, and business analytics scenarios.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">DAX</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/python-web-apps" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Python Web Applications</h3>
+                        <p class="project-description">Full-stack web applications built with Python frameworks. Includes REST APIs, database integrations, user authentication systems, and modern web development practices using FastAPI and Flask.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/retail-analytics" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Retail Analytics Platform</h3>
+                        <p class="project-description">Comprehensive retail analytics solution analyzing customer behavior, sales patterns, and inventory management. Built with Python, SQL, and Power BI for actionable business insights.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/sql-database-projects" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SQL Database Projects</h3>
+                        <p class="project-description">Database design and management projects including schema design, complex queries, stored procedures, and performance optimization for various business scenarios.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/excel-automation" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Excel Automation Tools</h3>
+                        <p class="project-description">VBA macros and Python scripts for automating Excel workflows, data processing, and report generation. Streamlines repetitive tasks and improves productivity.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">VBA</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/api-integration" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API Integration Services</h3>
+                        <p class="project-description">Third-party API integration services for payment gateways, social media platforms, and business tools. Built with Python and FastAPI for seamless data exchange.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/data-visualization" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Visualization Library</h3>
+                        <p class="project-description">Custom data visualization components and charts built with Python. Includes interactive dashboards, statistical plots, and business intelligence visualizations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Dash</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/testing-framework" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Testing Framework</h3>
+                        <p class="project-description">Comprehensive testing framework for Python applications including unit tests, integration tests, and automated testing pipelines with CI/CD integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pytest</span>
+                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ayushupadhyay21/portfolio-website" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p style="color: white; font-size: 0.9rem; margin: 0;">Click to view on GitHub</p>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">Interactive portfolio website built with HTML5, CSS3, and JavaScript. Features responsive design, smooth animations, and modern UI/UX principles.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Frontend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show-more-container" style="text-align:center; margin-top: 20px;">
+            <button id="showMoreProjectsBtn" class="btn btn-secondary">See All Projects</button>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>ayushupadhyay0713@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 9369591312</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ayushupadhyay21" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.github.com/ayushupadhyay21" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ayush Upadhyay. All rights reserved.</p>
+                <p>Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
